@@ -10,19 +10,26 @@ import java.util.ArrayList;
 
 public class FeatureExtractionAcc {
 
-    public String [] feature_names = new String[] {"x_mean","x_variance","x_kurtosis","x_skewness","x_percentile_25","x_percentile_75","x_kurtosis",
+    public String [] feature_names = new String[] {
+                                            //x-axis features
+                                            "x_mean","x_variance","x_kurtosis","x_skewness","x_percentile_25","x_percentile_75","x_kurtosis",
                                             "x_diff_mean","x_diff_variance","x_diff_kurtosis","x_diff_skewness","x_diff_percentile_25","x_diff_percentile_75","x_diff_kurtosis",
-                                                   
+                                            
+                                            //y-axis features   
                                             "y_mean","y_variance","y_kurtosis","y_skewness","y_percentile_25","y_percentile_75","y_kurtosis",
                                             "y_diff_mean","y_diff_variance","y_diff_kurtosis","y_diff_skewness","y_diff_percentile_25","y_diff_percentile_75","y_diff_kurtosis",
-                                                   
+                                            
+                                            //z-axis features
                                             "z_mean","z_variance","z_kurtosis","z_skewness","z_percentile_25","z_percentile_75","z_kurtosis",
                                             "z_diff_mean","z_diff_variance","z_diff_kurtosis","z_diff_skewness","z_diff_percentile_25","z_diff_percentile_75","z_diff_kurtosis",
-                                                   
+                                               
+                                            //magnitude features
                                             "magn_mean","magn_variance","magn_kurtosis","magn_skewness","magn_percentile_25","magn_percentile_75","magn_kurtosis",
                                             "magn_diff_mean","magn_diff_variance","magn_diff_kurtosis","magn_diff_skewness","magn_diff_percentile_25","magn_diff_percentile_75","magn_diff_kurtosis",
-                                                   
-                                            "xy_correlation","xz_correlation","yz_correlation"};
+                                            
+                                            //correlation features   
+                                            "xy_correlation","xz_correlation","yz_correlation"
+                                            };
 
     Kurtosis kurtosis;
     Mean mean ;
