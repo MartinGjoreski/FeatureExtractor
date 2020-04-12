@@ -9,7 +9,7 @@ implementation 'org.apache.commons:commons-math3:3.6.1'
 2. Uset the FeatureExtractionAcc in your code:
 
 arrayList<float[]> mSensorReadings;
-FeatureExtractionAcc featueExtractor;
+FeatureExtractionAcc featueExtractor = new FeatureExtractionAcc();
 
  @Override
     public void onSensorChanged(SensorEvent event) {
