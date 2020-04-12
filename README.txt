@@ -1,5 +1,13 @@
 # Example usage
 
+1. In the dependencies of your Gradle file (app) add:
+
+implementation 'org.apache.commons:commons-math3:3.6.1'
+
+
+
+2. Uset the FeatureExtractionAcc in your code:
+
 arrayList<float[]> mSensorReadings;
 FeatureExtractionAcc featueExtractor;
 
