@@ -1,4 +1,3 @@
-package si.uni_lj.fri.lrk.lab7;
 /**
  * Created by martin on 12/04/2020.
  */
