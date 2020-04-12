@@ -29,6 +29,10 @@ FeatureExtractionAcc featueExtractor = new FeatureExtractionAcc();
          //print features values and feature names in Logcat
          Log.d(TAG, Arrays.toString(features));
          Log.d(TAG, Arrays.toString(fa.feature_names));
+         
+         
+         mSensorReadings.subList(0, 10).clear(); //remove first 10 sensor readings 
+         //calucluate features again once the array size becomes 100 samples
       }
       
    }
