@@ -23,7 +23,12 @@ FeatureExtractionAcc featueExtractor = new FeatureExtractionAcc();
       feature_extraction_window = 100 //extract features every 100 samples
       
       if (mSensorReadings.size()>feature_extraction_window){
-         double [] features = featueExtractor.extractStatFeatures(mSensorReadings);    
+         //get features for the current sensor readings
+         double [] features = featueExtractor.extractStatFeatures(mSensorReadings);   
+         
+         //print features values and feature names in Logcat
+         Log.d(TAG, Arrays.toString(features));
+         Log.d(TAG, Arrays.toString(fa.feature_names));
       }
       
    }
